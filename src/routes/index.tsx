@@ -4,9 +4,9 @@ import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Phone, Sparkles } from "l
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dhruv Pachauri — Software Developer & ML Engineer" },
+      { title: "Dhruv Pachauri — Software Developer" },
       { name: "description", content: "Portfolio of Dhruv Pachauri. Full-stack developer building IPO platforms, AI financial advisors, and CNN-based medical imaging." },
-      { property: "og:title", content: "Dhruv Pachauri — Software Developer & ML Engineer" },
+      { property: "og:title", content: "Dhruv Pachauri — Software Developer" },
       { property: "og:description", content: "Full-stack developer and ML engineer. React, Node.js, Python, TensorFlow." },
     ],
   }),
@@ -96,7 +96,7 @@ function Nav() {
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border/40">
       <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <a href="#top" className="font-display text-lg">
-          dhruv<span className="text-amber">.</span>
+          Dhruv<span className="text-amber">.</span>
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <li><a href="#about" className="hover:text-foreground transition">About</a></li>
@@ -127,9 +127,7 @@ function Hero() {
         <span className="italic text-amber">Pachauri</span>
       </h1>
       <p className="mt-10 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-up">
-        Computer Science undergrad at GLA University, Mathura. I build full-stack
-        web applications and train machine-learning models — from IPO platforms
-        and AI advisors to CNNs for medical imaging.
+        A software engineering student and aspiring developer passionate about web development, AI, and technology. I love building projects, learning new tools, and turning ideas into real-world applications.
       </p>
       <div className="mt-12 flex flex-wrap gap-3 animate-fade-up">
         <a
@@ -148,8 +146,8 @@ function Hero() {
 
       <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border/50 pt-10">
         {[
-          { k: "Based in", v: "Agra, India" },
-          { k: "Focus", v: "Full-stack · ML" },
+          { k: "Lives in", v: "Agra, India" },
+          { k: "Focus", v: "Backend · ML" },
           { k: "Graduating", v: "May 2027" },
           { k: "Currently", v: "Open to roles" },
         ].map((s) => (
@@ -194,23 +192,17 @@ function About() {
       <div className="grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I'm a third-year B.Tech CSE student at GLA University, Mathura. My
-            work lives at the intersection of product engineering and applied
-            machine learning — I'm equally comfortable shipping a REST API for a
-            fintech app and training a CNN to classify CT scans.
+            I'm a final-year B.Tech Computer Science student at GLA University, Mathura. I am passionate about software development, artificial intelligence, and building impactful digital products. My interests span full-stack web development, machine learning, and problem-solving, and I enjoy turning innovative ideas into real-world applications.
           </p>
           <p>
-            Recently, I interned at <span className="text-foreground">Bluestock Fintech</span>{" "}
-            in Pune, where I built an IPO platform and a Fundamental Analysis
-            system powered by ML. Outside of work I hack on side projects,
-            attend hackathons, and explore new frameworks.
+            Over the years, I have developed projects ranging from AI-powered financial advisors and fraud detection systems to IPO analysis platforms and community-driven web applications. I actively participate in hackathons, coding competitions, and open-source learning opportunities to sharpen my technical skills and stay current with emerging technologies. My goal is to create technology that solves meaningful problems and delivers value to users.
           </p>
         </div>
         <aside className="rounded-2xl border border-border/60 bg-surface/60 p-6 space-y-4">
           <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Education</div>
           <div>
             <div className="font-display text-lg">B.Tech, Computer Science</div>
-            <div className="text-sm text-muted-foreground">GLA University, Mathura · CGPA 6.87</div>
+            <div className="text-sm text-muted-foreground">GLA University, Mathura · CGPA 6.94</div>
             <div className="text-xs font-mono text-muted-foreground mt-1">Expected May 2027</div>
           </div>
           <div className="h-px bg-border/60" />
@@ -382,7 +374,6 @@ function Footer() {
     <footer className="border-t border-border/40">
       <div className="mx-auto max-w-6xl px-6 py-10 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
         <div>© {new Date().getFullYear()} Dhruv Pachauri. Crafted with care.</div>
-        <div className="font-mono text-xs">Designed & built in Agra, India.</div>
       </div>
     </footer>
   );
