@@ -178,7 +178,7 @@ function Marquee() {
   );
 }
 
-function SectionHeader({ tag, title }: { tag: string; title: string }) {
+function SectionHeader({ tag, title }: { tag: string; title: React.ReactNode }) {
   return (
     <div className="mb-16">
       <div className="font-mono text-xs uppercase tracking-widest text-amber mb-4">— {tag}</div>
@@ -190,7 +190,7 @@ function SectionHeader({ tag, title }: { tag: string; title: string }) {
 function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-28">
-      <SectionHeader tag="About" title={<>Engineer by training, <span className="italic text-amber">builder</span> by instinct.</> as unknown as string} />
+      <SectionHeader tag="About" title={<>Engineer by training, <span className="italic text-amber">builder</span> by instinct.</>} />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
